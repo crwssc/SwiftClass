@@ -1,8 +1,11 @@
 import Foundation
 
-var fruit = ["Banane", "fraises", "oranges"]
-let smoothie = ["Banane": 1, "Kiwi": 2]
+var nickname: String?
 
-for ingradiants in fruit {
-    print("\(ingradiants): OK")
+nickname = "coco"
+
+if nickname == nil {
+    print ("No nickname provide")
+} else {
+    print("Hello \(nickname )")
 }
