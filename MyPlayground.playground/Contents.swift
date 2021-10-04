@@ -1,7 +1,4 @@
 import Foundation
 
-print("Hello World !")
-
-var name = "Quentin"
-
-print ("Hello " + name)
+let implicitInteger = 10
+let explicitInteger: Int = 10
