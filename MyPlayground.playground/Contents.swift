@@ -1,4 +1,8 @@
 import Foundation
 
-let implicitInteger = 10
-let explicitInteger: Int = 10
+var fruit = ["Banane", "fraises", "oranges"]
+let smoothie = ["Banane": 1, "Kiwi": 2]
+
+for ingradiants in fruit {
+    print("\(ingradiants): OK")
+}
