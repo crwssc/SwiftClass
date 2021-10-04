@@ -1,3 +1,7 @@
-import UIKit
+import Foundation
 
-var greeting = "Hello, playground"
+print("Hello World !")
+
+var name = "Quentin"
+
+print ("Hello " + name)
