@@ -1,7 +1,7 @@
 import Foundation
 
 
-// les tubes
+// les tuples
 
 let httpError = (code: 404, msg: "Page non trouvée mzé")
 
