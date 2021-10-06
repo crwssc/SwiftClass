@@ -6,3 +6,6 @@ import Foundation
 let fullBattery = 100
 
 var percentage = Double(fullBattery) - 21.34
+
+var displayedText = String(percentage) + "%"
+
