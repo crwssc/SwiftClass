@@ -1,11 +1,9 @@
 import Foundation
 
 
-// Conversion de Type
+// les tubes
 
-let fullBattery = 100
+let httpError = (404, "Page non trouvée mzé")
 
-var percentage = Double(fullBattery) - 21.34
-
-var displayedText = String(percentage) + "%"
+print(httpError.1)
 
