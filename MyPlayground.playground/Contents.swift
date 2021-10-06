@@ -3,7 +3,13 @@ import Foundation
 
 // les tubes
 
-let httpError = (404, "Page non trouvée mzé")
+let httpError = (code: 404, msg: "Page non trouvée mzé")
 
-print(httpError.1)
+print(httpError.msg)
 
+// créer de nouvelles variables à partir du tube
+
+let (code, msg) = httpError
+
+code
+msg
