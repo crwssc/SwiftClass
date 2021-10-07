@@ -1,15 +1,13 @@
 import Foundation
 
 
-// les tuples
+// les optionals
 
-let httpError = (code: 404, msg: "Page non trouvée mzé")
+let number = "314"
 
-print(httpError.msg)
+var value = Int(number)
 
-// créer de nouvelles variables à partir du tube
+var answer: String?
+answer = "oui"
 
-let (code, msg) = httpError
-
-code
-msg
+print(answer!)
