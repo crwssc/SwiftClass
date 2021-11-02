@@ -1,15 +1,11 @@
 import Foundation
 
+var possibleNumber = "456"
 
-// les optionals
+if let number = Int(possibleNumber) {
+    print(number)
+} else {
+    
+}
 
-let number = "314"
-
-var value = Int(number)
-
-var answer: String?
-answer = "oui"
-
-print(answer!)
-
-// add to commit
+// autre façon de faire la condition
