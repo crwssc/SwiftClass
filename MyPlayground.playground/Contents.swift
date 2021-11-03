@@ -10,11 +10,15 @@ let (user, password) = ("Quentin", "1234")
 let number = 12
 let oposite = -number
 
-// Opérateurs commposés
-
-var a = 0
-a += 1
-
 // Opérateurs de comparaison
 
+var a = 6
+var b = 8
+
+a == b
+a != b
+a > b
+a < b
+a >= b
+a <= b
 
