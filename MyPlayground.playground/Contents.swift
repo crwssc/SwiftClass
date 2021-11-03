@@ -5,17 +5,6 @@ import Foundation
 var name = "Quentin"
 let (user, password) = ("Quentin", "1234")
 
-// Oprérateurs arithmétiques ->
-
-// + - * /
-
-var a = 3
-var b = 5
-
-a - b
-
-// on ne peut pas utiliser les opératuers avec n'importe quel types de variables
-
 // Opérateurs unitaires
 
 let number = 12
@@ -23,5 +12,9 @@ let oposite = -number
 
 // Opérateurs commposés
 
-var 
+var a = 0
+a += 1
+
+// Opérateurs de comparaison
+
 
