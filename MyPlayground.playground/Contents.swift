@@ -1,24 +1,24 @@
 import Foundation
 
-// l'opérateur d'affectation permet d'assigner des valeurs à des variables, là on voit par exemple avec les tupes que l'on peut le faire de deux manières différentes
-
-var name = "Quentin"
-let (user, password) = ("Quentin", "1234")
-
-// Opérateurs unitaires
-
-let number = 12
-let oposite = -number
-
 // Opérateurs de comparaison
 
-var a = 6
-var b = 8
+let user = "Quentin"
+let password = 1234
 
-a == b
-a != b
-a > b
-a < b
-a >= b
-a <= b
+var pws = 1234
+
+if (password == pws) {
+    print("Bienvenu \(user)")
+} else {
+    print("Mauvais mot de passe")
+}
+
+// Opérateurs ternaires
+
+// condition ? ifTrue : ifFalse
+
+(password == pws) ? print("bienvenu \(user)") : print("Mauvais mot de passe")
+
+let hasDiscount = true
+let price = 89 - (hasDiscount ? 10 : 0)
 
