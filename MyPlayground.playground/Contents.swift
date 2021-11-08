@@ -1,18 +1,22 @@
 import Foundation
 
-// Opérateurs d'intervalles
+// Opérateurs logiques poussés
 
-for index in 1...5 {
-    print(index)
+/*
+ 
+NOT : !condition
+AND : condition1 && condition2
+OR : condition1 || condition2
+
+*/
+
+var allowedEntry = false
+
+if !allowedEntry {
+    print("Access denied")
 }
 
-// 1...5 1 et 5 inclus
-// 1..<5 5 exclus
-
-var names = ["Quentin", "Lucas", "Nicolas"]
-
-names.count
-
-for index in 0..<names.count {
-    print(names[index])
+var specialAccess = true
+if (allowedEntry || specialAccess) {
+    print("Access granted")
 }
