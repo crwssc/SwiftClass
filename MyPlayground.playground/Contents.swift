@@ -1,13 +1,10 @@
 import Foundation
 
-// Chaines de caractères
+// Modififier une chaine de caractère
 
-let answer = "ceci est ma réponse"
-var response: String = "Autre réponse"
+var greeting = "Hello"
 
-// Chaines de caractères spéciaux
+var name = "Quenotin"
+greeting.append(" \(name)")
 
-var maString = "\tNouveau Chap\nTitre : Mon Tire"
 
-// \ le "\" avant un caractère permet d'utiliser des caractères comme les guillemets etc.
-print(maString)
