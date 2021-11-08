@@ -2,9 +2,8 @@ import Foundation
 
 // Modififier une chaine de caractère
 
-var greeting = "Hello"
+var password = "HFefe"
 
-var name = "Quenotin"
-greeting.append(" \(name)")
-
-
+if (password.count < 8) {
+    print("le mdp doit avoir au moins 8 car")
+}
