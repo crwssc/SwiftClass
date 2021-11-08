@@ -1,9 +1,7 @@
 import Foundation
 
-// Modififier une chaine de caractère
+// Utiliser fistIndex
 
-var password = "HFefe"
+var name = "Quentin Dev Libre"
 
-if (password.count < 8) {
-    print("le mdp doit avoir au moins 8 car")
-}
+name.firstIndex(of: "D")
