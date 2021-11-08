@@ -1,24 +1,11 @@
 import Foundation
 
-// Opérateurs de comparaison
+// Opérateurs de combinaison d'optionnelle
 
-let user = "Quentin"
-let password = 1234
+var adress: String?
 
-var pws = 1234
-
-if (password == pws) {
-    print("Bienvenu \(user)")
+if (adress != nil) {
+    print(adress!)
 } else {
-    print("Mauvais mot de passe")
+    print("Aucune adresse")
 }
-
-// Opérateurs ternaires
-
-// condition ? ifTrue : ifFalse
-
-(password == pws) ? print("bienvenu \(user)") : print("Mauvais mot de passe")
-
-let hasDiscount = true
-let price = 89 - (hasDiscount ? 10 : 0)
-
