@@ -1,22 +1,13 @@
 import Foundation
 
-// Opérateurs logiques poussés
+// Chaines de caractères
 
-/*
- 
-NOT : !condition
-AND : condition1 && condition2
-OR : condition1 || condition2
+let answer = "ceci est ma réponse"
+var response: String = "Autre réponse"
 
-*/
+// Chaines de caractères spéciaux
 
-var allowedEntry = false
+var maString = "\tNouveau Chap\nTitre : Mon Tire"
 
-if !allowedEntry {
-    print("Access denied")
-}
-
-var specialAccess = true
-if (allowedEntry || specialAccess) {
-    print("Access granted")
-}
+// \ le "\" avant un caractère permet d'utiliser des caractères comme les guillemets etc.
+print(maString)
