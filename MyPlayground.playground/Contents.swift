@@ -14,6 +14,9 @@ var array2: [Int]
 
 var array3 = [Int]() // Ça par contre c'est un tableau avec aucun élément à l'intérieur
 
-var array4 = Array<Int>()
+var array4 = Array<String>()
 
 // Voici les 4 manières de définir un tableau
+
+array3.append(5)
+array4.append("Yes Man")
