@@ -28,8 +28,18 @@ var listOfPixels = Array(repeating: 0, count: 32)
 
 // Manière la plus courante de créer un tableau
 
-var toDoList = ["Clean the house", "Sign the contract"]
+var toDoList = ["Clean the house", "Sign the contract", "Pay the apple"]
+
+
+
+// Accéder à un tableau et le modifier
+
+toDoList[1] // on veut accéder à l'indice 1
+
+toDoList[0...1] // on veut accéder aux deux premiers éléments
+
+toDoList.insert("Do homework", at: 1)
 
 print(toDoList)
 
-
+toDoList.remove(at : 2)
