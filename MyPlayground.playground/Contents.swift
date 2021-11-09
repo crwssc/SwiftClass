@@ -20,3 +20,16 @@ var array4 = Array<String>()
 
 array3.append(5)
 array4.append("Yes Man")
+
+// autres manières de créer des tableaux (en utilisant les propositions de l'autocomplétion )
+// Ici par exemple, on crée un tableau qui aura 32 valeurs et chaque valeurs sera le 0
+
+var listOfPixels = Array(repeating: 0, count: 32)
+
+// Manière la plus courante de créer un tableau
+
+var toDoList = ["Clean the house", "Sign the contract"]
+
+print(toDoList)
+
+
