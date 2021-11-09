@@ -46,6 +46,8 @@ toDoList.remove(at : 2)
 
 // Parcourir un tableau
 
+toDoList.append("Nouvelle tache")
+
 for (index, task) in toDoList.enumerated() {
     print("\(task)\t indice : \(index)")
 }
