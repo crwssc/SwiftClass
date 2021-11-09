@@ -40,6 +40,12 @@ toDoList[0...1] // on veut accéder aux deux premiers éléments
 
 toDoList.insert("Do homework", at: 1)
 
-print(toDoList)
+
 
 toDoList.remove(at : 2)
+
+// Parcourir un tableau
+
+for task in toDoList {
+    print(task)
+}
