@@ -4,9 +4,10 @@ import Foundation
 
 var MathDictionary: Dictionary<String, Float>
 
-MathDictionary = Dictionary<String, Float>()
 
-// 2 eme façon de créer
+// 3 eme facon de initialiser un dictionnaire
 
-let monDico = [String: Float]()
+MathDictionary = ["Ma clé 1": 1.14, "Ma clé 2": 3.16]
+
+print(MathDictionary)
 
