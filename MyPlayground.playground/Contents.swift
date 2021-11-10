@@ -2,26 +2,23 @@ import Foundation
 
 // Ensembles (Sets)
 
-// Un set est comme un tableau mais sans doublons et ordres
+// Méthodes arithmétiques
 
-var lettres = Set<Character>()
+var ens1 = Set<Int>()
+var ens2 = Set<Int>()
 
-lettres.insert("a")
-lettres.insert("b")
-print(lettres)
+ens1.insert(1)
+ens1.insert(3)
+ens1.insert(5)
+ens1.insert(8)
 
-// Quelques méthodes pour les ensembles
+ens2.insert(8)
+ens2.insert(-3)
+ens2.insert(6)
+ens2.insert(7)
 
-var musicalGenders: Set<String> = Set<String>()
-
-musicalGenders.isEmpty
-
-musicalGenders.insert("Hip hop")
-musicalGenders.insert("Rock")
-
-musicalGenders.remove("Rock")
-musicalGenders.remove("Classical")
-
-for genre in musicalGenders.sorted() {
-    print(genre)
-}
+ens1.intersection(ens2)
+ens1.symmetricDifference(ens2)
+ens1.union(ens2)
+ens1.subtracting(ens2)
+ens2.subtracting(ens1)
