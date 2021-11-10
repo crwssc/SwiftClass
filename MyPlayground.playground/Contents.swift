@@ -2,12 +2,10 @@ import Foundation
 
 // Dictionnaires
 
-var MathDictionary: Dictionary<String, Float>
+var airports = ["CDG": "Charles de Glle", "OAK": "Aerport International d'Oakland", "CRL": "Brussel Charleroi"]
 
+airports["CRL"]
 
-// 3 eme facon de initialiser un dictionnaire
+airports.updateValue("Charles de Gaulle", forKey: "CDG")
 
-MathDictionary = ["Ma clé 1": 1.14, "Ma clé 2": 3.16]
-
-print(MathDictionary)
-
+print(airports)
