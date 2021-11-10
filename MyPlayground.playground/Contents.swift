@@ -4,11 +4,10 @@ import Foundation
 
 // Un set est comme un tableau mais sans doublons et ordres
 
-// Les objets doivent être hashables, deux objets sont hashables si lorsqu'ils sont égaux ils ont le même hashé
+var lettres = Set<Character>()
 
-let maString = "Quentin"
-let maDeuxièmeString = "Quentin"
+lettres.insert("a")
 
-maString.hashValue
-maDeuxièmeString.hashValue
+print(lettres)
+
 
