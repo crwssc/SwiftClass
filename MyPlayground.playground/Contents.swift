@@ -1,15 +1,14 @@
 import Foundation
 
-// if et else
+var point = (0, 0)
 
-var subscriptionPlan = 19
-var connected = true
-
-switch subscriptionPlan {
-case 19...39:
-    print ("Access to premium courses : ✅")
-case 9:
-    print("Access to regular courses : ✅")
+switch point {
+case (0, 0):
+    print("Point à l'origine")
+case (_, 0):
+    print("Point à laxe dex X")
+case (0, _):
+    print("Point à laxe dex Y")
 default:
-    print("Access denied, you should pay to have access to courses")
+    print("Point quelconque")
 }
