@@ -1,11 +1,9 @@
 import Foundation
 
-// Dictionnaires
+// Boucles et conditions
 
-var airports = ["CDG": "Charles de Glle", "OAK": "Aerport International d'Oakland", "CRL": "Brussel Charleroi"]
+// for in c'est quand on connait le nbre de tours que l'on doit faire, pour faire une action un certain nbre de fois
 
-// Boucle pour récupérer les éléments
-
-for (airportCode, airportName) in airports {
-    print("\(airportCode) : \(airportName)")
+for index in 10..<15 {
+    print(index)
 }
