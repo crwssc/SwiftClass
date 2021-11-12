@@ -1,14 +1,12 @@
 import Foundation
 
-// Les paramètres multiples
-
-func sum(values: Float...) -> Float {
-    var sum: Float = 0
-    
-    for number in values {
-        sum += number
-    }
-    return sum
+func swap(a: inout Int, b: inout Int) {
+    var tmp = a
+    a = b
+    b = tmp
 }
 
-sum(values: 1, 3, 5, 4, 6, 7, 5)
+var number1 = 3
+var number2 = 7
+
+swap(a: &number1, b: &number2) 
