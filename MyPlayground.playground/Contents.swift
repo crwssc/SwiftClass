@@ -1,12 +1,15 @@
 import Foundation
 
-func swap(a: inout Int, b: inout Int) {
-    var tmp = a
-    a = b
-    b = tmp
+/*
+
+func displayCalcul(op1: Int, op2: Int, calculFonction: ????) {
+    
 }
 
-var number1 = 3
-var number2 = 7
+func sayHello(argument1: String, argument2: Int) -> String {
+    print("")
+}
 
-swap(a: &number1, b: &number2) 
+(String, Int) -> String
+
+*/
