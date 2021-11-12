@@ -1,8 +1,14 @@
 import Foundation
 
-func sayHelloTo(_ name : String, _ city: String = "nowhere") {
-    print("Hello \(name) from \(city)")
+// Les paramètres multiples
+
+func sum(values: Float...) -> Float {
+    var sum: Float = 0
+    
+    for number in values {
+        sum += number
+    }
+    return sum
 }
 
-sayHelloTo("Quentin")
-
+sum(values: 1, 3, 5, 4, 6, 7, 5)
