@@ -1,25 +1,30 @@
 import Foundation
 
-func chooseDirection(left: Bool) {
-    var position = 0
+func chooseDirection(left: Bool) -> (Int) -> Int {
     
-    func goLeft() {
-        position += 1
+    func goLeft(position: Int) -> Int {
+        return position + 1
     }
     
-    func goRight() {
-        position -= 1
+    func goRight(position: Int) -> Int {
+        return position - 1
     }
     
-    if (left == true) {
-        goLeft()
+    if (left) {
+        return goLeft
     } else {
-        goRight()
+        return goRight
     }
     
-    print(position)
 }
 
-chooseDirection(left: true)
-chooseDirection(left: true)
-chooseDirection(left: false )
+var maFonction: (Int) -> Int
+
+maFonction = chooseDirection(left: true)
+
+maFonction(3)
+maFonction(4)
+
+maFonction = chooseDirection(left: false)
+
+maFonction(5)
