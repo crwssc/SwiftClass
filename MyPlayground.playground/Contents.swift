@@ -1,15 +1,15 @@
 import Foundation
 
-/*
-
-func displayCalcul(op1: Int, op2: Int, calculFonction: ????) {
-    
+func multiply(op1: Int, op2: Int) -> String {
+    return "\(op1) x \(op2) = \(op1 * op2)"
 }
 
-func sayHello(argument1: String, argument2: Int) -> String {
-    print("")
+func sub(op1: Int, op2: Int) -> String {
+    return "\(op1) - \(op2) = \(op1 * op2)"
 }
 
-(String, Int) -> String
+func displayCalcul(op1: Int, op2: Int, calculFonction: (Int, Int) -> String) {
+    print(calculFonction(op1, op2))
+}
 
-*/
+displayCalcul(op1: 4, op2: 6, calculFonction: multiply(op1:op2:))
