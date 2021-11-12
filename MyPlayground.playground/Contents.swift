@@ -1,8 +1,10 @@
 import Foundation
 
-func sayHelloTo(to name : String, from city: String) {
+func sayHelloTo(_ name : String, _ city: String) {
     print("Hello \(name) from \(city)")
 }
 
-sayHelloTo(to: "Quentin", from: "Paris")
+sayHelloTo("Qentin", "Paris")
+
+
 
