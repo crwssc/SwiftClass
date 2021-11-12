@@ -1,6 +1,11 @@
 import Foundation
 
-func minMax(array: [Int]) -> (min: Int, max: Int) {
+func minMax(array: [Int]) -> (min: Int, max: Int)? {
+    
+    if (array.isEmpty) {
+        return nil
+    }
+    
     var currentMin = array[0]
     var currentMax = array[0]
     
@@ -14,8 +19,8 @@ func minMax(array: [Int]) -> (min: Int, max: Int) {
     return (currentMin, currentMax)
 }
 
-var monTab = [1, 6, 8, 3, 9, -3]
+var monTab = [Int]()
 
-var mesMinEtMAx = minMax(array: monTab)
 
-mesMinEtMAx.min
+
+
