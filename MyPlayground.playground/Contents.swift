@@ -1,12 +1,11 @@
 import Foundation
 
-// Fonctions
-
-func sayHello(name1: String, name2: String) {
-    print("Hello \(name1) and \(name2)")
+func accessGranted(userID : Int, password: String) -> Bool {
+    if (password == "azerty") {
+        return true
+    } else {
+        return false
+    }
 }
 
-sayHello(name1: "Quentin", name2: "Nico")
-sayHello(name1: "Luca", name2: "David")
-
-
+accessGranted(userID: 001, password: "azerty")
