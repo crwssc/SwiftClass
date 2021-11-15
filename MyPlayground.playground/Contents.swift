@@ -14,6 +14,12 @@ class Player {
 }
 
 var myPlayer = Player()
-myPlayer.weapons.append(Weapon(name: "Arc", force: 2)
+myPlayer.weapons.append(Weapon(name: "Arc", force: 2))
+
+myPlayer.weapons
+
+// changer la force de l'arme au cours du jeu
+
+myPlayer.weapons[0].force += 1
 
 myPlayer.weapons
