@@ -1,14 +1,20 @@
 import UIKit
 
-enum Size: Int8 {
-    case small = 38
-    case medium = 40
-    case large = 42
-    case extraLarge = 44
+enum BarCode {
+    case classic(Int, Int, Int, Int)
+    case qr(String)
 }
 
-var selectedSize: Size
-selectedSize = .medium
+var selectedProduct: BarCode
 
-print(selectedSize)
-print(selectedSize.rawValue)
+selectedProduct = .qr("http://myshop.com/672638")
+selectedProduct = .classic(23, 4667, 627, 76)
+
+switch selectedProduct {
+case .classic(_, let provideer, _, _):
+    if provideer == 4667 {
+        print("Fournisseur : ----")
+    }
+default:
+    break
+}
