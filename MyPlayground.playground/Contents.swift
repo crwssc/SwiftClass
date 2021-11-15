@@ -12,6 +12,13 @@ enum Size {
 
 var selectedSize = Size.medium
 
-var mySize : Size
-mySize = .small
- 
+switch selectedSize {
+case .small:
+    print("Stock: 3")
+case .medium:
+    print("Stock: 1")
+case .large:
+    print("Stock: 1")
+case .extraLarge:
+    print("Stock: 0")
+}
