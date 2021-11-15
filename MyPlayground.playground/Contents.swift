@@ -2,12 +2,21 @@ import Foundation
 
 // Les Propriétés
 
-struct Engine {
-    var power: Int
-    var speeds: Int8
+struct Point {
+    var x: Float
+    var y: Float
 }
 
-var engine700 = Engine(power: 130, speeds: 6)
-engine700.power += 20
+struct Size {
+    var height: Float
+    var widht: Float
+}
 
-
+struct Rectangle {
+    var origine = Point(x: 0.0, y: 0.0)
+    var size = Size(height: 15.0, widht: 10.0)
+    
+    var center: Point {
+        
+    }
+}
