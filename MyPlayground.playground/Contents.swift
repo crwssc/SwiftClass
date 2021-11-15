@@ -14,9 +14,6 @@ class Player {
 }
 
 var myPlayer = Player()
-myPlayer.weapons.append(Weapon())
-
-myPlayer.weapons[0].name = "Arc"
-myPlayer.weapons[0].force = 2
+myPlayer.weapons.append(Weapon(name: "Arc", force: 2)
 
 myPlayer.weapons
