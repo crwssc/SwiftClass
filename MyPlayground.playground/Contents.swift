@@ -13,13 +13,18 @@ class Player {
     var lives: Int8 = 10
 }
 
-var myPlayer = Player()
-myPlayer.weapons.append(Weapon(name: "Arc", force: 2))
+//Lorsque l’on crée une structure, elle est passée par valeurs ( tout est recopié )
+//Lorsque l’on crée une classe, elle est passée par références
 
-myPlayer.weapons
+var weapon1 = Weapon(name: "bow", force: 3)
+var weapon2 = weapon1
 
-// changer la force de l'arme au cours du jeu
+weapon2.name = "gun"
 
-myPlayer.weapons[0].force += 1
+var player1 = Player()
+player1.name = "Quentin"
 
-myPlayer.weapons
+var player2 = player1
+player2.name = "Nicolas"
+
+player1.name
