@@ -1,12 +1,17 @@
-import Foundation
+import UIKit
 
-// les closures
+// Créer ses propres types
+// énumérations
 
+enum Size {
+    case small
+    case medium
+    case large
+    case extraLarge
+}
 
-var names = ["Quentin", "Nico", "Lucas", "Alex"]
+var selectedSize = Size.medium
 
-names.sort(by: {(s1 : String, s2: String) -> Bool in
-    return s1 < s2
-})
-
-names.sort(by: { $0 < $1 })
+var mySize : Size
+mySize = .small
+ 
