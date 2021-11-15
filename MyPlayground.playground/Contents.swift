@@ -1,20 +1,22 @@
-import UIKit
+import Foundation
 
-enum BarCode {
-    case classic(Int, Int, Int, Int)
-    case qr(String)
+// Classes et les Strutures
+
+struct Weapon {
+    var name: String = ""
+    var force: Int8 = 0
 }
 
-var selectedProduct: BarCode
-
-selectedProduct = .qr("http://myshop.com/672638")
-selectedProduct = .classic(23, 4667, 627, 76)
-
-switch selectedProduct {
-case .classic(_, let provideer, _, _):
-    if provideer == 4667 {
-        print("Fournisseur : ----")
-    }
-default:
-    break
+class Player {
+    var name: String = ""
+    var weapons = [Weapon]()
+    var lives: Int8 = 10
 }
+
+var myPlayer = Player()
+myPlayer.weapons.append(Weapon())
+
+myPlayer.weapons[0].name = "Arc"
+myPlayer.weapons[0].force = 2
+
+myPlayer.weapons
