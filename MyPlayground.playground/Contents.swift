@@ -1,17 +1,14 @@
 import UIKit
 
-// Créer ses propres types
-// énumérations
-
-enum Size: CaseIterable {
-    case small
-    case medium
-    case large
-    case extraLarge
+enum Size: Int8 {
+    case small = 38
+    case medium = 40
+    case large = 42
+    case extraLarge = 44
 }
 
-var selectedSize = Size.medium
+var selectedSize: Size
+selectedSize = .medium
 
-for size in Size.allCases {
-    print(size)
-}
+print(selectedSize)
+print(selectedSize.rawValue)
