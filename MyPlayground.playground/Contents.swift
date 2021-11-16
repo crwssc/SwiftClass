@@ -11,8 +11,8 @@ class Resident {
     }
 }
 
-var paul = Resident(name: "Paul")
+var resident1: Resident?
+resident1?.name
 
-if let addr = paul.adress {
-    print("Adresse de \(paul.name) : \(addr)")
-}
+resident1 = Resident(name: "Paul")
+resident1?.name
