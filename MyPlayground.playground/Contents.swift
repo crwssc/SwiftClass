@@ -2,18 +2,18 @@ import Foundation
 
 // méthodes
 
-class Counter {
+struct Counter {
     var number: Int = 0
     
-    func increment(by delta: Int) {
+    mutating func increment(by delta: Int) {
         number += delta
     }
     
-    func reset () {
+    mutating func reset () {
         number = 0
     }
     
-    func set(to number: Int) {
+    mutating func set(to number: Int) {
         self.number = number
     }
 }
