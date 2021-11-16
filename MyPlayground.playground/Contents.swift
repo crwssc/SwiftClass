@@ -16,7 +16,7 @@ class Vehicule {
 class Camion: Vehicule {
     var chargement: String? = nil
     
-    func charger(_ nouveauChargement: String) {
+    final func charger(_ nouveauChargement: String) {
         chargement = nouveauChargement
     }
     
