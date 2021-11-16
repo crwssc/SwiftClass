@@ -1,14 +1,25 @@
 import Foundation
 
-// Propriétés en lecture seule
+// Property Obsever
 
-struct Cube {
-    var size: Float = 0.0
-    var volume: Float {
-        return pow(size, 3)
+class Counter {
+    var number: Int = 0 {
+        
+        willSet (newNumber) {
+            print("Le compteur va prendre la valeur \(newNumber) à la place de \(self.number)")
+        }
+        
+        didSet {
+            if (self.number > oldValue) {
+                print("\(self.number - oldValue) ajouté au compteur")
+            } else {
+                print("\(-self.number + oldValue) retiré au compteur")
+            }
+        }
     }
 }
 
-var monCube = Cube()
+var monComputer = Counter()
 
-
+monComputer.number = 20
+monComputer.number = 18
