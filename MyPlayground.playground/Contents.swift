@@ -1,30 +1,16 @@
 import Foundation
 
-// héritage de classes
-// Surcharge de méthodes ou de propriétés = changer un comportement qui existe déja
+// Constructeurs
 
-class Vehicule {
-    var currentSpeed: Int = 0
-    var description: String {
-        return "Véhicule roulant à \(currentSpeed) kmh"
-    }
-    func drive() {
-        print("Vroom")
-    }
-}
-
-class Camion: Vehicule {
-    var chargement: String? = nil
+class RaceMap {
+    var surface: Int
+    var weather: String = "sunny"
     
-    final func charger(_ nouveauChargement: String) {
-        chargement = nouveauChargement
+    init(initialSurface: Int) {
+        surface = initialSurface
     }
     
-    override var description: String {
-        return "Véhicule transportant le \(chargement ?? "---")"
-    }
+    func setWeather(weather: String) {}
 }
 
-var monCamion = Camion()
-
-monCamion.description
+var map1 = RaceMap()
