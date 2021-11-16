@@ -1,9 +1,10 @@
 import Foundation
 
 // héritage de classes
+// Surcharge de méthodes ou de propriétés = changer un comportement qui existe déja
 
 class Vehicule {
-    var currentSpee: Int = 0
+    var currentSpeed: Int = 0
     var description: String {
         return "Véhicule roulant à \(currentSpeed) kmh"
     }
@@ -17,6 +18,10 @@ class Camion: Vehicule {
     
     func charger(_ nouveauChargement: String) {
         chargement = nouveauChargement
+    }
+    
+    override var description: String {
+        return "Véhicule transportant le \(chargement ?? "---")"
     }
 }
 
