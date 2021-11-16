@@ -2,15 +2,16 @@ import Foundation
 
 // Constructeurs
 
-class RaceMap {
-    var surface: Int
-    var weather: String = "sunny"
+class Color {
+    var red, green, blue: Double
     
-    init(initialSurface: Int) {
-        surface = initialSurface
+    init(red: Double, green: Double, blue: Double) {
+        self.red = red
+        self.green = green
+        self.blue = blue
     }
     
-    func setWeather(weather: String) {}
+    
 }
 
-var map1 = RaceMap()
+var prple = Color(red: 0.5, green: 0, blue: 0.5)
