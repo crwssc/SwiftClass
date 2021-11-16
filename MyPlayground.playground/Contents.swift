@@ -1,26 +1,18 @@
 import Foundation
 
-// Constructeurs
+// Chaînage d'optionnels
 
-class Device {
-    var battery: Float
-    var ID: Int16
+class Resident {
+    let name: String
+    var adress: String? = nil
     
-    init(id: Int16, battery: Float) {
-        self.ID = id
-        self.battery = battery
+    init(name: String) {
+        self.name = name
     }
 }
 
-class Smartphone: Device {
-    var screen: String
-    
-    init(id: Int16, battery: Float, screen: String) {
-        self.screen = screen
-        super.init(id: id, battery: battery)
-    }
+var paul = Resident(name: "Paul")
+
+if let addr = paul.adress {
+    print("Adresse de \(paul.name) : \(addr)")
 }
-
-var sm = Smartphone(id: 999, battery: 89, screen: "Oled")
-
-sm.battery
