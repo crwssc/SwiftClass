@@ -1,14 +1,22 @@
 import Foundation
 
-// variables globales et variables local
+// méthodes
 
-class AudioChannel {
-    var source: String = ""
+class Counter {
+    var number: Int = 0
     
-    static var maxInputLevel: Int = 30
+    func increment(by delta: Int) {
+        number += delta
+    }
+    
+    func reset () {
+        number = 0
+    }
+    
+    func set(to number: Int) {
+        self.number = number
+    }
 }
 
-var chanel1 = AudioChannel()
-var chanel2 = AudioChannel()
-
-AudioChannel.maxInputLevel = 30
+var lapCounter = Counter()
+lapCounter.increment(by: 2)
