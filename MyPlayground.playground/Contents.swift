@@ -1,21 +1,25 @@
 import Foundation
 
-// méthodes de classe
+// héritage de classes
 
-class Dog {
-    var bread: String = "Labrador"
-    
-    func bark() {
-        print("Woaf!")
+class Vehicule {
+    var currentSpee: Int = 0
+    var description: String {
+        return "Véhicule roulant à \(currentSpeed) kmh"
     }
-    
-    static func getNumberOfLegs() -> Int {
-        return 4
+    func drive() {
+        print("Vroom")
     }
 }
 
-var myDog = Dog()
+class Camion: Vehicule {
+    var chargement: String? = nil
+    
+    func charger(_ nouveauChargement: String) {
+        chargement = nouveauChargement
+    }
+}
 
-Dog.getNumberOfLegs()
+var monCamion = Camion()
 
-
+monCamion.description
