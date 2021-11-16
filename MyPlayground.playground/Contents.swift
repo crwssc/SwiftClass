@@ -18,7 +18,7 @@ class Color {
     }
 }
 
-var prple = Color(red: 0.5, green: 0, blue: 0.5)
+var purple = Color(red: 0.5, green: 0, blue: 0.5)
 
 var grey = Color(white: 0.2)
 
