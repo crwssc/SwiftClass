@@ -1,25 +1,14 @@
 import Foundation
 
-// Property Obsever
+// variables globales et variables local
 
-class Counter {
-    var number: Int = 0 {
-        
-        willSet (newNumber) {
-            print("Le compteur va prendre la valeur \(newNumber) à la place de \(self.number)")
-        }
-        
-        didSet {
-            if (self.number > oldValue) {
-                print("\(self.number - oldValue) ajouté au compteur")
-            } else {
-                print("\(-self.number + oldValue) retiré au compteur")
-            }
-        }
-    }
+class AudioChannel {
+    var source: String = ""
+    
+    static var maxInputLevel: Int = 30
 }
 
-var monComputer = Counter()
+var chanel1 = AudioChannel()
+var chanel2 = AudioChannel()
 
-monComputer.number = 20
-monComputer.number = 18
+AudioChannel.maxInputLevel = 30
