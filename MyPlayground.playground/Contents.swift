@@ -1,22 +1,21 @@
 import Foundation
 
-// méthodes
+// méthodes de classe
 
-struct Counter {
-    var number: Int = 0
+class Dog {
+    var bread: String = "Labrador"
     
-    mutating func increment(by delta: Int) {
-        number += delta
+    func bark() {
+        print("Woaf!")
     }
     
-    mutating func reset () {
-        number = 0
-    }
-    
-    mutating func set(to number: Int) {
-        self.number = number
+    static func getNumberOfLegs() -> Int {
+        return 4
     }
 }
 
-var lapCounter = Counter()
-lapCounter.increment(by: 2)
+var myDog = Dog()
+
+Dog.getNumberOfLegs()
+
+
