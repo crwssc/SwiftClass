@@ -2,24 +2,25 @@ import Foundation
 
 // Constructeurs
 
-class Color {
-    var red, green, blue: Double
+class Device {
+    var battery: Float
+    var ID: Int16
     
-    init(red: Double, green: Double, blue: Double) {
-        self.red = red
-        self.green = green
-        self.blue = blue
-    }
-    
-    init(white: Double) {
-        self.red = white
-        self.green = white
-        self.blue = white
+    init(id: Int16, battery: Float) {
+        self.ID = id
+        self.battery = battery
     }
 }
 
-var purple = Color(red: 0.5, green: 0, blue: 0.5)
+class Smartphone: Device {
+    var screen: String
+    
+    init(id: Int16, battery: Float, screen: String) {
+        self.screen = screen
+        super.init(id: id, battery: battery)
+    }
+}
 
-var grey = Color(white: 0.2)
+var sm = Smartphone(id: 999, battery: 89, screen: "Oled")
 
-
+sm.battery
