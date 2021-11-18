@@ -1,14 +1,36 @@
 import Foundation
 
-extension Int {
-    mutating func puissance(exp: Int) {
-        let base = self
-        
-        for _ in 1..<exp {
-            self *= base
-        }
-    }
+// Protocoles
+
+protocol VehiculeRoulant {
+    var passagers: Int { get set }
+    var marque: Bool { get }
+    
+    func avancer(speed: Float)
+    func clignoter(direction: String)
+    func attacher() -> Bool
 }
 
-var value : Int = 5
-value.puissance(exp: 3)
+class Voiture: VehiculeRoulant {
+        
+    var marque: Bool = true
+    
+    var passagers: Int = 0
+
+    func avancer(speed: Float) {
+        
+    }
+    
+    func clignoter(direction: String) {
+        
+    }
+    
+    func attacher() -> Bool {
+        return true
+    }
+    
+    
+}
+
+var maVoiture = Voiture()
+ma.Voiture.()
