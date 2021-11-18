@@ -1,23 +1,13 @@
 import Foundation
 
-// Gestion des erreurs
+// Les extensions
 
-enum NetworkError: Error {
-    case invalidNetworkID
-    case connectionLost
-    case wrongIP(providedIP: Int)
+extension Double {
+    var km: Double { return self * 1_000 }
+    var m: Double { return self }
+    var mm: Double { return self / 1_000 }
 }
 
-func connect(IP: Int) throws {
-    guard IP >= 255 else {
-        throw NetworkError.connectionLost
-    }
-}
+var distance: Double = 14.km + 250.m
 
-do {
-    try connect(IP: 250)
-} catch NetworkError.connectionLost {
-    print("connexion perdue")
-} catch NetworkError.invalidNetworkID {
-    print("ID invalide")
-}
+distance
