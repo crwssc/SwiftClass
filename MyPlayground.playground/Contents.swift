@@ -1,25 +1,17 @@
 import Foundation
 
-// Chaînage d'optionnels
+// Gestion des erreurs
 
-struct Adress {
-    let city: String
-    let zip: Int
-    var apt: Int8? = nil
+enum NetworkError: Error {
+    case invalidNetworkID
+    case connectionLost
+    case wrongIP(providedIP: Int)
 }
 
-class Resident {
-    let name: String
-    var adress: Adress? = nil
-    
-    init(name: String) {
-        self.name = name
+func connect(IP: Int) throws {
+    if (IP < 255) {
+        throw NetworkError.wrongIP(providedIP: IP)
     }
 }
 
-var paul: Resident? = Resident(name: "Paul")
-paul?.adress = Adress(city: "Las Vegas", zip: 89119, apt: nil)
-
-paul?.adress?.city
-
-
+connect(IP: 6374847)
