@@ -1,17 +1,14 @@
 import Foundation
 
-// Les extensions
-
-struct Rect {
-    var height: Double
-    var width: Double
-}
-
-extension Rect {
-    init(surface: Double) {
-        width = sqrt(surface)
-        height = width
+extension Int {
+    mutating func puissance(exp: Int) {
+        let base = self
+        
+        for _ in 1..<exp {
+            self *= base
+        }
     }
 }
 
-var monRectangle = Rect
+var value : Int = 5
+value.puissance(exp: 3)
