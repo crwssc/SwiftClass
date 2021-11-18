@@ -9,9 +9,13 @@ enum NetworkError: Error {
 }
 
 func connect(IP: Int) throws {
-    if (IP < 255) {
+    guard IP >= 255 else {
         throw NetworkError.wrongIP(providedIP: IP)
     }
 }
 
-connect(IP: 6374847)
+do {
+    try connect(IP: 250)
+} catch is NetworkError {
+    print("Erreur de connection")
+}
